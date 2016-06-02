@@ -22,8 +22,9 @@ import android.widget.Toast;
 
 import com.easemob.EMError;
 import com.easemob.chat.EMChatManager;
-import cn.ucai.secret.DemoApplication;
 import com.easemob.exceptions.EaseMobException;
+
+import cn.ucai.secret.DemoApplication;
 
 /**
  * 注册页
@@ -32,7 +33,7 @@ import com.easemob.exceptions.EaseMobException;
 public class RegisterActivity extends BaseActivity {
 	private EditText userNameEditText;
 	private EditText passwordEditText;
-	private EditText confirmPwdEditText;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,6 @@ public class RegisterActivity extends BaseActivity {
 		setContentView(cn.ucai.secret.R.layout.activity_register);
 		userNameEditText = (EditText) findViewById(cn.ucai.secret.R.id.username);
 		passwordEditText = (EditText) findViewById(cn.ucai.secret.R.id.password);
-		confirmPwdEditText = (EditText) findViewById(cn.ucai.secret.R.id.confirm_password);
 	}
 
 	/**
@@ -51,7 +51,6 @@ public class RegisterActivity extends BaseActivity {
 	public void register(View view) {
 		final String username = userNameEditText.getText().toString().trim();
 		final String pwd = passwordEditText.getText().toString().trim();
-		String confirm_pwd = confirmPwdEditText.getText().toString().trim();
 		if (TextUtils.isEmpty(username)) {
 			Toast.makeText(this, getResources().getString(cn.ucai.secret.R.string.User_name_cannot_be_empty), Toast.LENGTH_SHORT).show();
 			userNameEditText.requestFocus();
@@ -60,15 +59,7 @@ public class RegisterActivity extends BaseActivity {
 			Toast.makeText(this, getResources().getString(cn.ucai.secret.R.string.Password_cannot_be_empty), Toast.LENGTH_SHORT).show();
 			passwordEditText.requestFocus();
 			return;
-		} else if (TextUtils.isEmpty(confirm_pwd)) {
-			Toast.makeText(this, getResources().getString(cn.ucai.secret.R.string.Confirm_password_cannot_be_empty), Toast.LENGTH_SHORT).show();
-			confirmPwdEditText.requestFocus();
-			return;
-		} else if (!pwd.equals(confirm_pwd)) {
-			Toast.makeText(this, getResources().getString(cn.ucai.secret.R.string.Two_input_password), Toast.LENGTH_SHORT).show();
-			return;
 		}
-
 		if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(pwd)) {
 			final ProgressDialog pd = new ProgressDialog(this);
 			pd.setMessage(getResources().getString(cn.ucai.secret.R.string.Is_the_registered));
@@ -85,7 +76,7 @@ public class RegisterActivity extends BaseActivity {
 									pd.dismiss();
 								// 保存用户名
 								DemoApplication.getInstance().setUserName(username);
-								Toast.makeText(getApplicationContext(), getResources().getString(cn.ucai.secret.R.string.Registered_successfully), 0).show();
+								Toast.makeText(getApplicationContext(), getResources().getString(cn.ucai.secret.R.string.Registered_successfully), Toast.LENGTH_SHORT).show();
 								finish();
 							}
 						});
