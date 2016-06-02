@@ -106,6 +106,11 @@ public class RegisterActivity extends BaseActivity {
 		}
 	}
 
+	@Override
+	protected void onResume() {
+		super.onResume();
+	}
+
 	public void back(View view) {
 		finish();
 	}

@@ -147,7 +147,7 @@ public class LoginActivity extends BaseActivity {
 				try {
 					// ** 第一次登录或者之前logout后再登录，加载所有本地群和回话
 					// ** manually load all local groups and
-				    EMGroupManager.getInstance().loadAllGroups();
+					EMGroupManager.getInstance().loadAllGroups();
 					EMChatManager.getInstance().loadAllConversations();
 					// 处理好友和群组
 					initializeContacts();
@@ -157,7 +157,7 @@ public class LoginActivity extends BaseActivity {
 					runOnUiThread(new Runnable() {
 						public void run() {
 							pd.dismiss();
-							DemoHXSDKHelper.getInstance().logout(true,null);
+							DemoHXSDKHelper.getInstance().logout(true, null);
 							Toast.makeText(getApplicationContext(), cn.ucai.secret.R.string.login_failure_failed, 1).show();
 						}
 					});
@@ -176,7 +176,7 @@ public class LoginActivity extends BaseActivity {
 				Intent intent = new Intent(LoginActivity.this,
 						MainActivity.class);
 				startActivity(intent);
-				
+
 				finish();
 			}
 
@@ -249,5 +249,9 @@ public class LoginActivity extends BaseActivity {
 		if (autoLogin) {
 			return;
 		}
+	}
+
+	public void back(View view) {
+		finish();
 	}
 }

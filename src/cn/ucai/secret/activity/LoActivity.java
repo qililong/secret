@@ -26,7 +26,6 @@ public class LoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoActivity.this,RegisterActivity.class));
-                finish();
             }
         });
 
@@ -34,7 +33,6 @@ public class LoActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoActivity.this,LoginActivity.class));
-                finish();
             }
         });
     }
