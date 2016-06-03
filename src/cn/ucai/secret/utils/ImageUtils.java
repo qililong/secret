@@ -17,8 +17,8 @@ import com.easemob.util.EMLog;
 import com.easemob.util.PathUtil;
 
 public class ImageUtils {
-//	public static String getThumbnailImagePath(String imagePath) {
-//		String path = imagePath.substring(0, imagePath.lastIndexOf("/") + 1);
+//	public static raw.String getThumbnailImagePath(raw.String imagePath) {
+//		raw.String path = imagePath.substring(0, imagePath.lastIndexOf("/") + 1);
 //		path += "th" + imagePath.substring(imagePath.lastIndexOf("/") + 1, imagePath.length());
 //		EMLog.d("msg", "original image path:" + imagePath);
 //		EMLog.d("msg", "thum image path:" + path);

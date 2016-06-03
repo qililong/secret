@@ -743,7 +743,7 @@ public class MessageAdapter extends BaseAdapter{
 				holder.iv.setImageResource(cn.ucai.secret.R.drawable.default_image);
 				ImageMessageBody imgBody = (ImageMessageBody) message.getBody();
 				if (imgBody.getLocalUrl() != null) {
-					// String filePath = imgBody.getLocalUrl();
+					// raw.String filePath = imgBody.getLocalUrl();
 					String remotePath = imgBody.getRemoteUrl();
 					String filePath = ImageUtils.getImagePath(remotePath);
 					String thumbRemoteUrl = imgBody.getThumbnailUrl();
@@ -1426,10 +1426,10 @@ public class MessageAdapter extends BaseAdapter{
 	 */
 	private boolean showImageView(final String thumbernailPath, final ImageView iv, final String localFullSizePath, String remoteDir,
 			final EMMessage message) {
-		// String imagename =
+		// raw.String imagename =
 		// localFullSizePath.substring(localFullSizePath.lastIndexOf("/") + 1,
 		// localFullSizePath.length());
-		// final String remote = remoteDir != null ? remoteDir+imagename :
+		// final raw.String remote = remoteDir != null ? remoteDir+imagename :
 		// imagename;
 		final String remote = remoteDir;
 		EMLog.d("###", "local = " + localFullSizePath + " remote: " + remote);

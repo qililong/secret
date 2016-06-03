@@ -14,10 +14,12 @@
 package cn.ucai.secret.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easemob.EMError;
@@ -25,6 +27,7 @@ import com.easemob.chat.EMChatManager;
 import com.easemob.exceptions.EaseMobException;
 
 import cn.ucai.secret.DemoApplication;
+import cn.ucai.secret.R;
 
 /**
  * 注册页
@@ -33,6 +36,7 @@ import cn.ucai.secret.DemoApplication;
 public class RegisterActivity extends BaseActivity {
 	private EditText userNameEditText;
 	private EditText passwordEditText;
+	TextView login;
 
 
 	@Override
@@ -41,6 +45,21 @@ public class RegisterActivity extends BaseActivity {
 		setContentView(cn.ucai.secret.R.layout.activity_register);
 		userNameEditText = (EditText) findViewById(cn.ucai.secret.R.id.username);
 		passwordEditText = (EditText) findViewById(cn.ucai.secret.R.id.password);
+		initView();
+		setListenner();
+	}
+
+	private void initView() {
+		login = (TextView) findViewById(R.id.login);
+	}
+
+	private void setListenner() {
+		login.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+			}
+		});
 	}
 
 	/**

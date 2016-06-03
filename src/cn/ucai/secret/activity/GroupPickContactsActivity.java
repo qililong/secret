@@ -54,7 +54,7 @@ public class GroupPickContactsActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(cn.ucai.secret.R.layout.activity_group_pick_contacts);
 
-		// String groupName = getIntent().getStringExtra("groupName");
+		// raw.String groupName = getIntent().getStringExtra("groupName");
 		String groupId = getIntent().getStringExtra("groupId");
 		if (groupId == null) {// 创建群组
 			isCreatingNewGroup = true;

@@ -25,7 +25,7 @@ public class LoActivity extends Activity {
         mRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoActivity.this,RegisterActivity.class));
+                startActivity(new Intent(LoActivity.this,Login1Activity.class));
             }
         });
 

@@ -122,7 +122,7 @@ public class DateUtils {
             minute = minute % 60;
         }
         int second = timeLength % 60;
-        // return String.format("%02d:%02d:%02d", hour, minute, second);
+        // return raw.String.format("%02d:%02d:%02d", hour, minute, second);
         return String.format("%02d:%02d", minute, second);
     }
     /**
@@ -139,7 +139,7 @@ public class DateUtils {
             minute = minute % 60;
         }
         int second = timeLength % 60;
-        // return String.format("%02d:%02d:%02d", hour, minute, second);
+        // return raw.String.format("%02d:%02d:%02d", hour, minute, second);
         return String.format("%02d:%02d", minute, second);
     }
      

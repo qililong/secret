@@ -72,12 +72,12 @@
             android:layout_marginLeft="20dp"
             android:drawableLeft="@drawable/btn_check_on_focused_holo_dark"/>
         <TextView
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="已有账号登陆>>"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:onClick="register"
             android:layout_marginLeft="130dp"/>
     </LinearLayout>
     <TextView
