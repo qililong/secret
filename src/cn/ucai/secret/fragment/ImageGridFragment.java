@@ -1,4 +1,4 @@
-package cn.ucai.secret.activity;
+package cn.ucai.secret.fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +31,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import cn.ucai.secret.BuildConfig;
+import cn.ucai.secret.activity.RecorderVideoActivity;
 import cn.ucai.secret.domain.VideoEntity;
 import cn.ucai.secret.video.util.ImageCache;
 import cn.ucai.secret.video.util.ImageResizer;

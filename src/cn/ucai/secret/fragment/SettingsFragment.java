@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.ucai.secret.activity;
+package cn.ucai.secret.fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -30,6 +30,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easemob.EMCallBack;
+
+import cn.ucai.secret.activity.BlacklistActivity;
+import cn.ucai.secret.activity.DiagnoseActivity;
+import cn.ucai.secret.activity.LoginActivity;
+import cn.ucai.secret.activity.MainActivity;
+import cn.ucai.secret.activity.OfflinePushNickActivity;
+import cn.ucai.secret.activity.UserProfileActivity;
 import cn.ucai.secret.applib.controller.HXSDKHelper;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMChatOptions;

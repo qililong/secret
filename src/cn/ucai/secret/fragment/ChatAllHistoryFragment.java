@@ -1,4 +1,4 @@
-package cn.ucai.secret.activity;
+package cn.ucai.secret.fragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -40,6 +40,8 @@ import com.easemob.chat.EMConversation.EMConversationType;
 import cn.ucai.secret.Constant;
 import cn.ucai.secret.DemoApplication;
 import cn.ucai.secret.R;
+import cn.ucai.secret.activity.ChatActivity;
+import cn.ucai.secret.activity.MainActivity;
 import cn.ucai.secret.adapter.ChatAllHistoryAdapter;
 import cn.ucai.secret.db.InviteMessgeDao;
 
