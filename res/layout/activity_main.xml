@@ -25,12 +25,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_chat_bg"
                 android:onClick="onTabClicked"
                 android:paddingBottom="2dip"
                 android:paddingTop="7dip"
                 android:scaleType="matrix"
-                android:text="@string/session"
+                android:text="校内"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
 
@@ -60,12 +59,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_contact_list_bg"
                 android:onClick="onTabClicked"
                 android:paddingBottom="2dip"
                 android:paddingTop="7dip"
                 android:scaleType="matrix"
-                android:text="@string/address_book"
+                android:text="热门"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
 
@@ -90,12 +88,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/main_bottom_item_bg"
-                android:drawableTop="@drawable/tab_setting_bg"
                 android:onClick="onTabClicked"
                 android:paddingBottom="2dip"
                 android:paddingTop="7dip"
                 android:scaleType="matrix"
-                android:text="@string/setting"
+                android:text="朋友"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
         </RelativeLayout>

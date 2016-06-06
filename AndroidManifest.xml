@@ -327,8 +327,17 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="3ecea51f560650b1ed8a4b99808f52e8" />
 
-        <activity android:name=".activity.LoActivity" />
-        <activity android:name=".activity.Login1Activity"></activity>
+        <activity android:name=".activity.LoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"/>
+        <activity android:name=".activity.Login1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name=".activity.Register2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize|stateVisible"></activity>
     </application>
 
 </manifest>

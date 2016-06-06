@@ -3,72 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.ucai.secret.activity.Login1Activity"
+    tools:context="cn.ucai.secret.activity.Register2Activity"
     android:orientation="vertical"
-    android:background="#FFF">
+    android:background="#fff">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/sidebar_titlt_bg">
-
         <ImageView
-            android:id="@+id/ivLogin1_back"
+            android:id="@+id/ivRegister2_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/ssdk_back_arr"/>
+            android:src="@drawable/ssdk_back_arr"
+            android:onClick=""/>
         <TextView
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="选择所在城市"
+            android:text="登陆"
             android:textSize="20dp"
             android:gravity="center_vertical"
             android:drawableLeft="@drawable/title_logo"/>
         <TextView
-            android:id="@+id/tvLogin1Next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="下一步"
+            android:text="完成"
             android:textSize="20dp"
             android:gravity="center_vertical"/>
+
     </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入你的学校进行搜索"
+        android:layout_marginTop="10dp"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="当前定位城市"
-        android:gravity="center_vertical"
-        android:textColor="#000"
-        android:textSize="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#ccc"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="深圳"
-            android:gravity="center_vertical"
-            android:textColor="#000"
-            android:textSize="20dp" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/city_check"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="20dp"
-            />
-    </LinearLayout>
+        android:text="选择所在学校"
+        android:textSize="20dp"
+        android:background="#555"/>
     <!--<android.support.v7.widget.RecyclerView-->
-        <!--android:id="@+id/rvCity"-->
+        <!--android:id="@+id/rvSchool"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content">-->
     <!--</android.support.v7.widget.RecyclerView>-->
-
 </LinearLayout>
