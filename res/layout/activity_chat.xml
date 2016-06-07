@@ -6,59 +6,33 @@
     android:animateLayoutChanges="true"
     android:background="#f2f0eb" >
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_top_bar"
-        android:background="@color/top_bar_normal_bg"
-        android:gravity="center_vertical" >
+        android:layout_height="45dp"
+        android:background="@drawable/sidebar_titlt_bg">
 
-        <include layout="@layout/commom_back_btn" />
-
-        <TextView
-            android:id="@+id/name"
+        <ImageView
+            android:id="@+id/ivLogin1_back"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
-
-        <RelativeLayout
-            android:id="@+id/container_remove"
-            android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/common_tab_bg"
-            android:onClick="emptyHistory" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="9dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/mm_title_remove" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/container_to_group"
-            android:layout_width="50dp"
+            android:src="@drawable/ssdk_back_arr"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/common_tab_bg"
-            android:onClick="toGroupDetails"
-            android:visibility="gone" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:scaleType="centerInside"
-                android:src="@drawable/to_group_details_normal" />
-        </RelativeLayout>
-    </RelativeLayout>
+            android:text="校内秘密"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/title_logo"/>
+        <ImageView
+            android:id="@+id/tvLogin1Next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_menu_start_conversation"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bar_bottom"
