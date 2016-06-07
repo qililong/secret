@@ -341,7 +341,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustResize|stateVisible" />
-        <activity android:name=".activity.secret_remindActivity"></activity>
+        <activity android:name=".activity.secret_remindActivity" />
+        <activity android:name=".activity.new_messageActivity" />
+        <activity android:name=".activity.meassage_chatActivity"></activity>
     </application>
 
 </manifest>

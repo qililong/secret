@@ -5,55 +5,6 @@
      android:background="@color/common_bg"
     android:orientation="vertical" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="@drawable/sidebar_titlt_bg">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/abc_ic_ab_menu_holo_dark"
-            android:onClick="back"/>
-        <TextView
-            android:id="@+id/mimi"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="秘密大厅"
-            android:textSize="20dp"
-            android:gravity="center_vertical"
-            android:drawableLeft="@drawable/title_logo"/>
-        <RelativeLayout
-            android:layout_width="140dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true">
-
-            <ImageView
-                android:id="@+id/q1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/sidebar_icon_notice"
-                android:gravity="center_vertical"/>
-            <ImageView
-                android:id="@+id/q2"
-                android:layout_marginLeft="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/title_add"
-                android:gravity="center_vertical"
-                android:layout_toRightOf="@+id/q1"/>
-            <ImageView
-                android:layout_marginLeft="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/title_share"
-                android:gravity="center_vertical"
-                android:layout_toRightOf="@+id/q2"/>
-        </RelativeLayout>
-
-    </RelativeLayout>
     <include
         android:id="@+id/rl_error_item"
         layout="@layout/chat_neterror_item"
